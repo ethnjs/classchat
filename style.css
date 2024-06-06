@@ -8,6 +8,7 @@
 
 body {
   background-color: white;
+  padding-top: 70px;
 }
 
 /* typography */
@@ -43,6 +44,15 @@ p {
 /* HEADER */
 .header {
   background-color: transparent;
+  position: fixed;
+  top: 0;
+  transition: top 0.5s ease-in-out;
+  z-index: 100;
+  width: 100%;
+}
+
+.nav-up {
+  top: -80px;
 }
 
 .header .container {
@@ -245,7 +255,7 @@ p {
 /* SECTION 2: HOW IT WORKS */
 .how-container {
   max-width: 75%;
-  margin: 0 auto 400px;
+  margin: 0 auto;
   padding: 0 0 100px;
   position: relative;
   display: block;
@@ -302,28 +312,52 @@ p {
   text-align: left;
 }
 
-/* SECTION x: SOLUTIONS */
-.solutions {
-  background: linear-gradient(180deg, white, rgba(60, 65, 240, 0.1));
-}
-
+/* SECTION 3: SOLUTIONS */
 .solutions-container {
   max-width: 75%;
   margin: 0 auto;
   padding: 0 0 100px;
   position: relative;
-  display: grid;
-  grid-template-columns: 0.8fr 0.8fr 2fr 0.8fr 0.8fr;
-  grid-auto-rows: auto;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
 }
 
-.solution-column {
+.solutions-areas {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.solutions-areas h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.solutions-areas .left {
+  flex: 1;
+}
+
+.solutions-areas .desk {
+  width: 780px;
+  height: auto;
+  position: relative;
+}
+
+.solutions-areas .shadow {
+  position: absolute;
+  left: -125px;
+  bottom: 75px;
+}
+
+.solutions-column {
+  flex: 1;
+  background: url('assets/images/solutions/Vector.png') no-repeat center;
+  padding: 200px;
   height: 100%;
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  justify-content: center;
   align-items: center;
   position: relative;
 }
@@ -377,30 +411,111 @@ p {
   object-fit: contain;
 }
 
-.solution-box.box-1, .solution-box.box-5 {
-  position: absolute;
-  top: 200px;
+/* SECTION 4: Data */
+.data-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  position: relative;
 }
 
-.solution-box.box-2, .solution-box.box-4 {
-  position: absolute;
-  top: 100px;
+.data-bg {
+  background: #7E91FF;
+  margin: 50px 0;
 }
 
-.solution-text {
-  margin: 75px 0 0;
+.data-container .phone {
+  position: absolute;
+  top: 0;
+  left: 12.5vw;
+}
+
+.data-text-container {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 125px 0;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 100px;
+  justify-content: right;
+  align-items: center;
 }
 
-.solution-column h2, 
-.solution-column h3 {
-  text-align: center;
+.data-text {
+  width: 60%;
+  color: white;
 }
 
-.solution-column h3 {
-  font-weight: normal;
+.data-text h2 {
+  margin-bottom: 20px;
+}
+
+.data-text p {
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+.data-numbers {
+  width: 50%;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+}
+
+.data-numbers h2,
+.data-numbers p {
+  width: 100%;
+  margin: 0;
+}
+
+.data-text h5 {
+  margin-bottom: 30px;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.data-text .link.learn-more {
+  color: white;
+}
+
+.success-bg {
+  background: linear-gradient(180deg, white, rgba(60, 65, 240, 0.1));
+}
+
+.success {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 75px 0 100px;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.success h3 {
+  font-weight: 500;
+  width: 60%;
+}
+
+.success .guy {
+  width: 456px;
+  height: auto;
+  position: absolute;
+  right: -50px;
+  bottom: 0px;
+}
+
+.success .shadow {
+  position: absolute;
+  bottom: -45px;
+  right: -135px;
 }
 
 /* SECTION x: SCHOOLS */
