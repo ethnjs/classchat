@@ -40,7 +40,9 @@ p {
   font-weight: normal;
 }
 
-/* HEADER */
+/* -------------------------
+HEADER
+------------------------- */
 .header {
   background-color: transparent;
   position: fixed;
@@ -134,10 +136,10 @@ p {
   display: flex;
   align-items: center;
   margin-left: auto;
+  gap: 15px;
 }
 
 .btn {
-  margin-left: 15px;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 16px;
@@ -149,26 +151,28 @@ p {
   transform: translateY(-2px);
 }
 
-.sign-in-btn {
+.transparent-btn {
   margin: 0;
   border: 2px solid white;
-  background-color: white;
+  background-color: transparent;
   color: #3C41F0;
 }
 
-.sales-btn {
+.color-btn {
   border: 2px solid #3C41F0;
   background-color: #3C41F0;
   color: white;
 }
 
-.try-btn {
+.white-btn {
   border: 2px solid #3C41F0;
   background-color: white;
   color: #3C41F0;
 }
 
-/* SECTION 1: HERO */
+/* -------------------------
+SECTION 1: HERO
+------------------------- */
 .hero {
   background: linear-gradient(90deg, rgba(60, 65, 240, 0.1), white, rgba(60, 65, 240, 0.1));
 }
@@ -183,11 +187,6 @@ p {
   position: relative;
 }
 
-.hero-text {
-  flex: 1;
-  margin-right: 20px;
-}
-
 .hero-text h1 {
   margin-bottom: 30px;
 }
@@ -198,46 +197,49 @@ p {
 
 .hero-btns {
   display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 30px;
 }
 
 .hero-btns .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 250px;
   height: 75px;
-  margin: 0 60px 0 0;
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-imgs {
-  flex: 1.5;
   position: relative;
+  display: inline-flex;
+  align-items: flex-start;
 }
 
-.hero-imgs .phone {
+.hero .phone {
   width: 783px;
   height: auto;
 }
 
-.hero-imgs .guy {
+.hero .guy {
   width: auto;
   height: 788px;
   position: absolute;
   top: 355px;
-  right: -50px;
+  right: -25px;
 }
 
-.hero-imgs .guy-shadow {
+.hero .guy-shadow {
   position: absolute;
-  right: -185px;
+  right: -160px;
   bottom: -695px;
 }
 
-.hero-imgs .girl {
+.hero .girl {
   width: auto;
   height: 1121px;
   position: absolute;
@@ -246,7 +248,7 @@ p {
   z-index: 1;
 }
 
-.hero-imgs .bubble {
+.hero .bubble {
   height: 175px;
   position: absolute;
   top: 525px;
@@ -254,13 +256,15 @@ p {
   z-index: 1;
 }
 
-.hero-imgs .girl-shadow {
+.hero .girl-shadow {
   position: absolute;
   left: -800px;
   bottom: -925px;
 }
 
-/* SECTION 2: HOW IT WORKS */
+/* -------------------------
+SECTION 2: HOW IT WORKS
+------------------------- */
 .how-it-works {
   background: linear-gradient(90deg, rgba(60, 65, 240, 0.1), white, rgba(60, 65, 240, 0.1));
 }
@@ -324,7 +328,9 @@ p {
   text-align: left;
 }
 
-/* SECTION 3: SOLUTIONS */
+/* -------------------------
+SECTION 3: SOLUTIONS
+------------------------- */
 .solutions {
   background: linear-gradient(90deg, rgba(60, 65, 240, 0.1), white, rgba(60, 65, 240, 0.1));
 }
@@ -431,7 +437,9 @@ p {
   object-fit: contain;
 }
 
-/* SECTION 4: Data */
+/* -------------------------
+SECTION 4: DATA
+------------------------- */
 .data-container {
   max-width: 100%;
   margin: 0 auto;
@@ -542,7 +550,9 @@ p {
   right: -135px;
 }
 
-/* SECTION 5: SCHOOLS */
+/* -------------------------
+SECTION 5: SCHOOLS
+------------------------- */
 .schools {
   background: linear-gradient(180deg, rgba(60, 65, 240, 0.1), white);
 }
@@ -576,7 +586,9 @@ p {
   margin: 0 auto;
 }
 
-/* SECTION 6: TESTIMONIALS */
+/* -------------------------
+SECTION 6: TESTIMONIALS
+------------------------- */
 .testimonials .container {
   max-width: 75%;
   margin: 0 auto 100px;
@@ -656,7 +668,9 @@ p {
   right: 50px;
 }
 
-/* SECTION 7: FORM */
+/* -------------------------
+SECTION 7: FORM
+------------------------- */
 .form .container {
   max-width: 50%;
   margin: 0 auto;
@@ -726,7 +740,9 @@ input[type="button"]:hover {
   transform: translateY(-2px);
 }
 
-/* SECTION 8: FAQs */
+/* -------------------------
+SECTION 8: FAQs
+------------------------- */
 .bubble-letters {
   display: flex;
   justify-content: center;
@@ -798,4 +814,128 @@ input[type="button"]:hover {
 
 .accordion .item.active .minus {
   display: block;
+}
+
+/* -------------------------
+FOOTER
+------------------------- */
+.footer {
+  background: #17171A;
+  width: 100%;
+}
+
+.footer .container {
+  max-width: 75%;
+  padding: 70px 0 0;
+  margin: 0 auto;
+}
+
+.footer .links {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.footer .title {
+  color: white;
+}
+
+.footer .copyright p {
+  padding-left: 25px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.footer h5 {
+  margin-bottom: 20px;
+}
+
+.footer .the-company ul {
+  list-style: none;
+}
+
+.footer .the-company li {
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.footer .the-company,
+.footer .connect {
+  margin-top: 40px;
+}
+
+.footer .connect .container {
+  max-width: 100%;
+  margin: 10px 0 30px;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer .social-btn {
+  width: 65px;
+  height: 65px;
+  color: white;
+  padding: 20px;
+  background-color: #1F1F23;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.social-btn img {
+  width: 25px;
+  height: 25px;
+}
+
+.footer .hor-divider {
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.50);
+  height: 1px;
+  margin: 10px 0;
+}
+
+.footer .below {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .below .btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px 0;
+}
+
+.footer .below .download-btn {
+  padding: 0;
+}
+
+.footer .below .download-btn img {
+  height: 44px;
+}
+
+.footer .below .policies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .below .ver-divider {
+  width: 28px;
+  height: 1px;
+  transform: rotate(90deg);
+  background-color: rgba(255, 255, 255, 0.50);
 }
